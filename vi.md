@@ -18,5 +18,8 @@
 - p       : paste (from buffer)
 - :w      : write
 - :q      : quit
+- :q!     : quit without save (ignore all changes)
 - :wq     : write and quit
 - :w a.txt : save as new file "a.txt"
+- /www    : search the string "www"
+- n       : move to next search result
