@@ -22,7 +22,12 @@
 - :w a.txt : save as new file "a.txt"
 
 ## Command Mode commands : Advanced
-- /www    : search the string "www"
-- yy      : copy current line (into buffer)
-- p       : paste (from buffer)
-- n       : move to next search result
+- Search
+  - /www    : search the string "www"
+  - n       : move to next search result
+- Copy and paste lines
+  - yy      : copy current line (into buffer)
+  - p       : paste (from buffer)
+- Delete multiple lines
+  - :1,5 d
+
