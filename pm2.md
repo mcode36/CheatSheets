@@ -22,5 +22,13 @@ $ pm2 start ecosystem.config.js
 or
 $ pm2 [start|restart|stop|delete] ecosystem.config.js
 
+# Setup pm2 to start at system reboot (startup script)
+$ pm2 startup
+then, copy/paste the generated command
+then, use pm2 to bring up the desired processes (pm2 start ...)
+then, do "pm2 save"
+
+see: https://pm2.keymetrics.io/docs/usage/startup/
+
 # Official documentation page
 https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
