@@ -30,5 +30,15 @@ then, do "pm2 save"
 
 see: https://pm2.keymetrics.io/docs/usage/startup/
 
+# ecosystem.config.js file
+- How to add comment?
+- Use "name" to name the app. PM2 will use this name as ID.
+  For example, 
+     ~~~~
+     name: "Todo",
+	 ~~~~
+  Then when we run "pm2 start ecosystem.config.js" pm2 will use the name "Todo" as id.
+  Otherwise it will use the name of the main program like "server" (if we run "pm2 start server.js")
+  
 # Official documentation page
 https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
