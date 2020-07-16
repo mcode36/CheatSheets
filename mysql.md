@@ -12,3 +12,6 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'phpmyadmin'@'localhost' ;
 
 ## Grand a user full control over a specific database
 mysql> GRANT ALL PRIVILEGES ON _db_name.* TO 'db_user'@'localhost';
+
+## Create database
+mysql> CREATE DATABASE db_name;
