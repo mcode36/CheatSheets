@@ -20,3 +20,8 @@ https://wordpress.org/support/article/how-to-install-wordpress/
    $ cd /var/www/html
    $ sudo chown -R www-data wordpress
    ~~~~
+   
+## Notes when using NGINX
+
+   - Setting Permalink to "Post name" will run into a lot of "404 Not found" errors.
+     Use "Plain" setup instead
