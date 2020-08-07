@@ -16,6 +16,9 @@
    (optional: if apache2 is still running) /etc/init.d/apache2 stop
    sudo systemctl start nginx
 
+## Stop nginx service
+   sudo systemctl stop nginx
+   
 ## Check nginx status
 
    sudo systemctl status nginx
