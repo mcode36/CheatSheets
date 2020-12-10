@@ -23,7 +23,18 @@ mongo
 - mongod configuration file : /etc/mongod.conf
 
 ## Mongo shell 
-- List all databases : show dbs
-- Use database: use hcc
-- Insert new record to new database: db.test.insert({"name":"test"})
+- List all databases : 
+~~~~
+show dbs
+~~~~
+
+- Use database: 
+~~~~
+use (db_name)
+~~~~
+
+- Insert new record to new database: 
+~~~~
+db.test.insert({"name":"test"})
+~~~~
 
