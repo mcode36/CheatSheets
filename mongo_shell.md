@@ -33,6 +33,11 @@ show dbs
 use (db_name)
 ~~~~
 
+- Show collections: 
+~~~~
+show collections
+~~~~
+
 - Insert new record to new database: 
 ~~~~
 db.test.insert({"name":"test"})
