@@ -1,13 +1,25 @@
 # Ubuntu
 
+- Install MongoDB Community Edition on Ubuntu [link](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
+  1. wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+  2. echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+  3. sudo apt-get update
+  4. sudo apt-get install -y mongodb-org
+
+- Start MongoDB
+~~~~
+sudo systemctl start mongod
+~~~~
+
 - Check mongod service
 ~~~~
 service mongod status
 ~~~~
 or
 ~~~~
-systemctl status mongod.service
+sudo systemctl status mongod
 ~~~~
+
 
 - To start mongod
 ~~~~
