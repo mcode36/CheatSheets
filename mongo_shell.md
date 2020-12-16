@@ -40,7 +40,7 @@ mongo
 show dbs
 ~~~~
 
-- Use database: 
+- Use database (this will create a new database): 
 ~~~~
 use (db_name)
 ~~~~
