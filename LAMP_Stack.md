@@ -39,29 +39,31 @@ PHP:
     1. cd c:\php7
 	2. copy php.ini-development to php.ini
 	3. Edit php.ini
-	
+	   ~~~~
 	   line  Content
 	   ----  --------------------------------
 	    757  extension_dir = "c:\php7\ext"
 	    922  extension=mysqli
+     ~~~~
 	   
   - Setup : Apache httpd.conf
     1. cd C:\Apache24\conf
 	2. Edit httpd.conf
-	
+	   ~~~~
 	   Line  Content
 	   ----  --------------------------------
 	     37  Define SRVROOT "c:/Apache24"
-		 
-		284  <IfModule dir_module>
-		285      DirectoryIndex index.php index.html
-		286  </IfModule>
-		
-		538  # PHP7 module
-		539  AddHandler application/x-httpd-php .php 
-		540  AddType application/x-httpd-php .php .html 
-		541  LoadModule php7_module "c:/php7/php7apache2_4.dll" 
-		542  PHPIniDir "c:/php7"
+
+		  284  <IfModule dir_module>
+		  285      DirectoryIndex index.php index.html
+		  286  </IfModule>
+
+		  538  # PHP7 module
+		  539  AddHandler application/x-httpd-php .php 
+		  540  AddType application/x-httpd-php .php .html 
+		  541  LoadModule php7_module "c:/php7/php7apache2_4.dll" 
+		  542  PHPIniDir "c:/php7"
+     ~~~~
 	
 mySQL:
   - Download: MySQL Installer 8.0.21 (from https://dev.mysql.com/downloads/installer/)
